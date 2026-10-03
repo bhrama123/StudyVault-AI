@@ -1,0 +1,266 @@
+.documents-page {
+  min-height: 100vh;
+  background: #f5f7fb;
+  padding: 45px 7%;
+  font-family: Inter, system-ui, sans-serif;
+}
+
+.documents-header {
+  max-width: 1000px;
+  margin: 0 auto 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.documents-header h1 {
+  margin: 0 0 8px;
+  color: #111827;
+  font-size: 32px;
+}
+
+.documents-header p {
+  margin: 0;
+  color: #64748b;
+}
+
+.back-button {
+  border: 1px solid #dbe1ea;
+  background: white;
+  padding: 11px 17px;
+  border-radius: 9px;
+  cursor: pointer;
+  color: #334155;
+  font-weight: 600;
+}
+
+.upload-card {
+  max-width: 650px;
+  margin: 0 auto;
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 18px;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.05);
+}
+
+.upload-icon {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #eef2ff;
+  border-radius: 18px;
+  font-size: 32px;
+}
+
+.upload-card h2 {
+  margin: 0 0 10px;
+  color: #111827;
+}
+
+.upload-description {
+  color: #64748b;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.file-label {
+  display: block;
+  border: 2px dashed #c7d2fe;
+  border-radius: 12px;
+  padding: 25px;
+  color: #4f46e5;
+  font-weight: 600;
+  cursor: pointer;
+  background: #fafaff;
+}
+
+.file-label input {
+  display: block;
+  margin: 15px auto 0;
+}
+
+.selected-file {
+  margin-top: 15px;
+  padding: 14px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  text-align: left;
+  background: #f8fafc;
+  border-radius: 10px;
+}
+
+.selected-file strong,
+.selected-file small {
+  display: block;
+}
+
+.selected-file small {
+  margin-top: 4px;
+  color: #64748b;
+}
+
+.subject-label {
+  display: block;
+  text-align: left;
+  margin-top: 25px;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #334155;
+}
+
+.upload-card select {
+  width: 100%;
+  height: 48px;
+  border: 1px solid #dbe1ea;
+  border-radius: 9px;
+  padding: 0 12px;
+  font-size: 14px;
+  background: white;
+}
+
+.upload-button {
+  width: 100%;
+  height: 50px;
+  margin-top: 25px;
+  border: none;
+  border-radius: 10px;
+  background: #4f46e5;
+  color: white;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.upload-button:hover {
+  background: #4338ca;
+}
+
+.upload-button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.upload-success,
+.upload-error {
+  margin-top: 20px;
+  padding: 12px;
+  border-radius: 9px;
+  font-size: 14px;
+}
+
+.upload-success {
+  background: #ecfdf5;
+  color: #047857;
+}
+
+.upload-error {
+  background: #fef2f2;
+  color: #b91c1c;
+}
+
+.upload-info {
+  margin-top: 22px;
+  color: #94a3b8;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+@media (max-width: 600px) {
+  .documents-page {
+    padding: 25px 15px;
+  }
+
+  .documents-header {
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .documents-header h1 {
+    font-size: 25px;
+  }
+
+  .upload-card {
+    padding: 30px 20px;
+  }
+}
+/* ===============================
+   CLICKABLE DOCUMENT NAME
+   =============================== */
+
+.document-name-clickable {
+  cursor: pointer;
+  color: #111827;
+  transition: color 0.2s ease;
+}
+
+.document-name-clickable:hover {
+  color: #4f46e5;
+}
+
+
+/* ===============================
+   VIEW DOCUMENT BUTTON
+   =============================== */
+
+.view-document-button {
+  margin-top: 14px;
+  padding: 9px 16px;
+  border: none;
+  border-radius: 8px;
+  background: #4f46e5;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.view-document-button:hover {
+  background: #4338ca;
+  transform: translateY(-1px);
+}
+/* ===============================
+   DOCUMENT ACTIONS
+   =============================== */
+
+.document-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 14px;
+  flex-wrap: wrap;
+}
+
+
+/* ===============================
+   DELETE BUTTON
+   =============================== */
+
+.delete-document-button {
+  padding: 9px 16px;
+  border: 1px solid #fecaca;
+  border-radius: 8px;
+  background: #fff1f2;
+  color: #dc2626;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.delete-document-button:hover {
+  background: #fee2e2;
+  border-color: #fca5a5;
+}
+
+.delete-document-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
